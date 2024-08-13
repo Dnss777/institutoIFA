@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="ptbr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.72.0">
+    <title>Carousel Template · Bootstrap</title>
+
+    <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/carousel/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+   
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <img src="/static/images/log.png" width="100" height="100" class="d-inline-block align-top" alt="">
+                <a class="navbar-brand" href="#">I.F.A</a>
+                <a class="navbar-brand" href="#">Instituto das Famílias Atípicas</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto mb-2 mb-md-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Quem somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="incent.html">Incentivo I.F.A.</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="#">
+                                Cursos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Pessoa Física</a></li>
+                                <li><a class="dropdown-item" href="#">Empresas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+       <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <video class="d-block w-100" autoplay loop muted>
+                <source src="/static/video/familia.mp4" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+            <div class="container">
+                <div class="carousel-caption text-left">
+                    <h1> Acolhimento de famílias atípicas</h1>
+                    <p> No IFA, entendemos que cada membro da família atípica merece cuidados especiais.</p> 
+                    <p> Sabemos que as adversidades do dia a dia podem ser desafiadoras, e é por isso que oferecemos 
+                        o suporte necessário para ajudar você a seguir em frente. Venha fazer parte dessa rede de apoio que transforma vidas! </p>
+                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Saiba mais</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <video class="d-block w-100" autoplay loop muted>
+                <source src="/static/video/neuro.mp4" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Faça sua doação e ajude crianças PCD!</h1>
+                    <p> A sua doação será revertida em atividades para crianças com deficiência, com profissionais especializados, garantindo o 
+                        desenvolvimento em diversas áreas.
+                    </p>
+                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Saiba mais</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <video class="d-block w-100" autoplay loop muted>
+                <source src="/static/video/aut2.mp4" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1 style="color: black;">O que são neurodivergentes?</h1>
+                    <p style="color: black;">Saiba mais sobre os neurodivergentes e como lidar com adversidades do dia a dia.
+                    </p>
+                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Saiba mais</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <video class="d-block w-100" autoplay loop muted>
+                <source src="/static/video/curso.mp4" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1> Treinamento - Palestras - Cursos para empresas</h1>
+                    <p> Contrate nossos serviços para garantir a inclusão na sua empresa!
+                    </p>
+                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Saiba mais</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="carousel-item">
+            <video class="d-block w-100" autoplay loop muted>
+                <source src="/static/video/rev.mp4" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+            <div class="container">
+                <div class="carousel-caption text-right">
+                    <h1> Atividades para crianças com deficiências</h1>
+                    <p> Inscreva sua criança para ter acsso as atividades monitoradas por profissionais preparados! </p>
+                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Inscrição</a></p>
+                </div>
+          </div>
+          
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+        <!-- Marketing messaging and featurettes
+  ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+        <div class="container marketing">
+            <!-- Three columns of text below the carousel -->
+            <div class="row justify-content-center">
+                <div class="col-lg-4">
+                    <div class="image-container">
+                        <img src="/static/images/teativismo-removebg-preview (3).png" class="rounded-circle" alt="Imagem 1">
+                    </div>
+                    <h2>Teativismo</h2>
+                    <p>Movimento para unir pessoas e famílias Ativistas na Causa dos Direitos da pessoa Autista. Propósito de acompanhar cobrar fiscalizar a criação de politicas públicas e execução do Poder Público. Proporcionar conhecimento e ajuda as famílias TEA (Transtorno Espectro Autista).</p>
+                    <p><a class="btn btn-secondary" href="#" role="button">Saiba mais &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+        
+                <div class="col-lg-4">
+                    <div class="image-container">
+                        <img src="/static/images/empat.jpg" class="rounded-circle" alt="Imagem 2">
+                    </div>
+                    <h2>Empatea</h2>
+                    <p>Empatia, conscientização e inclusão do autista. </p>
+                    <p><a class="btn btn-secondary" href="#" role="button">Saiba mais &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+        </div>
+        
+        
+            <!-- START THE FEATURETTES -->
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your
+                            mind.</span>
+                    </h2>
+                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
+                        euismod
+                        semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus
+                        ac cursus
+                        commodo.</p>
+                </div>
+                <div class="col-md-5">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: 500x500"
+                        preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
+                            dy=".3em">500x500</text>
+                    </svg>
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for
+                            yourself.</span></h2>
+                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
+                        euismod
+                        semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus
+                        ac cursus
+                        commodo.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: 500x500"
+                        preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
+                            dy=".3em">500x500</text>
+                    </svg>
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
+                        euismod
+                        semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus
+                        ac cursus
+                        commodo.</p>
+                </div>
+                <div class="col-md-5">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: 500x500"
+                        preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
+                            dy=".3em">500x500</text>
+                    </svg>
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <!-- /END THE FEATURETTES -->
+
+        </div><!-- /.container -->
+
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-info">
+              <div class="contact-info">
+        
+                <h5>Telefone para contato</h5>
+              </p>
+                <p> +55 11 96917-6170</p>
+              </div>
+              <div class="end-info">
+                <h5>Endereço</h5>
+                
+                <p> São Bernardo do Campo e Santo André - SP</p>
+              </div>
+              <div class="social-media text-white">
+                <h5>Nossas mídias sociais</h5>
+                <i class="bi bi-instagram insta fs-4" onclick="window.open('https://www.instagram.com/teativismo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==/', '_blank')"></i>
+                <i class="bi bi-facebook face fs-4" onclick="window.open('https://l.instagram.com/?u=https%3A%2F%2Fm.facebook.com%2Fgroups%2F285857367120656%2F%3Fref%3Dshare%26mibextid%3DNSMWBT&e=AT0jIMA2eHc1WD7rBF_J3SNWZTeJQRt7Ta9L7P1brCSKC1-qd-v5RPmwt_dCDzMuPV8BuS1oVjWJ1Ri-Fvdt6wQLtyP41_Eg2f_3Z50lzrrgukWXf7u9sQ','_blank')"></i>
+                <i class="bi bi-messenger mess fs-4" onclick="window.open('https://www.messenger.com/','_blank')"></i>
+                <i class="bi bi-whatsapp whats fs-4" onclick="window.open('https://wa.me/5511969176170','_blank')"></i>
+            </div>
+            </div>
+            <div class="footer-text">
+              <p>&copy; 2024 I.F.A. Todos os direitos reservados.</p>
+              
+            </div>
+          </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9g5wLsWTLKPQWJ0MxtEKhHLYHh+54nR8X4fD4E1D5e7P4S7gx2Q" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

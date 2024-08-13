@@ -1,0 +1,223 @@
+/* Garante que o body e o html preencham a altura total da janela */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Remove a barra de rolagem horizontal */
+  display: flex;
+  flex-direction: column;
+}
+
+/* A área principal do site deve crescer para empurrar o footer para o fundo */
+main {
+  flex: 1;
+  width: 100%; /* Garante que o main ocupe a largura total */
+  overflow-x: hidden; /* Evita a rolagem horizontal no main */
+}
+
+/* Footer que fica na parte inferior após o conteúdo */
+footer {
+  background-image: linear-gradient(rgb(24, 75, 67), rgb(17, 88, 77), rgb(20, 125, 108), rgb(30, 255, 255));
+  padding: 5px;
+  width: 100%;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-info {
+  color: white;
+  font-size: medium;
+}
+
+.end-info {
+  color: white;
+  font-size: medium;
+}
+
+.footer-text {
+  text-align: center;
+  color: white;
+}
+
+.insta {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 15px;
+}
+
+.face {
+  color: #3B5998;
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 15px;
+}
+
+.mess {
+  color: #3B5998;
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 15px;
+}
+
+.whats {
+  color: rgb(50, 192, 14);
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    padding-bottom: 90px;
+  }
+
+  footer .footer-info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+
+  .social-media {
+    text-align: center;
+  }
+
+  .card-group {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+  }
+}
+
+/* Restante do CSS existente */
+
+/* Outras regras existentes (não alteradas) */
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 32rem;
+}
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+/* Começo marketing */
+
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  padding: 0 10px; /* Adiciona espaçamento interno para evitar rolagem horizontal */
+}
+
+.marketing .col-lg-4:not(:last-child) {
+  margin-right: 20px; /* Adiciona espaço entre as colunas */
+}
+
+.marketing h2 {
+  font-weight: 400;
+}
+
+.marketing .col-lg-4 p {
+  margin-right: .90rem;
+  margin-left: .90rem;
+}
+
+.featurette-divider {
+  margin: 5rem 0;
+}
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+.image-container {
+  width: 200px; /* Largura do círculo */
+  height: 200px; /* Altura do círculo */
+  margin: 0 auto; /* Centralizar o círculo */
+  overflow: hidden;
+  border-radius: 50%; /* Criar o efeito circular */
+}
+
+.image-container img {
+  width: 100%; /* Tamanho da imagem em relação ao container */
+  height: auto; /* Manter a proporção da imagem */
+  object-fit: cover; /* Garantir que a imagem se ajuste ao container circular */
+}
+
+/* Fim marketing */
+
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+/* Aplicar gradiente e bordas arredondadas à navbar */
+.navbar {
+  background: linear-gradient(to right, rgb(17, 88, 77), rgb(20, 125, 108), rgb(30, 255, 255));
+  border-radius: 0.15rem;
+  padding: 0.20rem 2rem;
+  margin: 0;
+}
+
+/* Customizar o texto da navbar-brand */
+.navbar-brand {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #FF5362;
+}
+
+/* Se houver uma classe específica para a fonte */
+.grey-qo-regular {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
