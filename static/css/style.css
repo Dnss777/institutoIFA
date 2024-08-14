@@ -98,20 +98,6 @@ footer {
 /* Restante do CSS existente */
 
 /* Outras regras existentes (não alteradas) */
-.bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
-}
 
 .carousel {
   margin-bottom: 4rem;
@@ -134,12 +120,20 @@ footer {
   height: 32rem;
 }
 
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+}
+
 /* Começo marketing */
 
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
-  padding: 0 10px; /* Adiciona espaçamento interno para evitar rolagem horizontal */
+  padding: 3 20px; /* Adiciona espaçamento interno para evitar rolagem horizontal */
 }
 
 .marketing .col-lg-4:not(:last-child) {
@@ -155,51 +149,82 @@ footer {
   margin-left: .90rem;
 }
 
-.featurette-divider {
-  margin: 5rem 0;
-}
-
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -.05rem;
-}
 
 .image-container {
   width: 200px; /* Largura do círculo */
   height: 200px; /* Altura do círculo */
   margin: 0 auto; /* Centralizar o círculo */
   overflow: hidden;
-  border-radius: 50%; /* Criar o efeito circular */
+  border-radius: 30%; /* Criar o efeito circular */
 }
 
 .image-container img {
   width: 100%; /* Tamanho da imagem em relação ao container */
   height: auto; /* Manter a proporção da imagem */
-  object-fit: cover; /* Garantir que a imagem se ajuste ao container circular */
+ /* object-fit: cover; /* Garantir que a imagem se ajuste ao container circular */
 }
+
 
 /* Fim marketing */
 
-@media (min-width: 40em) {
-  .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
-  }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
+.featurette-divider {
+  margin: 2rem 0;
 }
 
-@media (min-width: 62em) {
+.featurette .col-md-7 {
+  margin-left: 40px; /* Aumente o valor conforme necessário */
+}
+
+.featurette-heading {
+  font-weight: 100;
+  line-height: 0;
+  letter-spacing: -.05rem;
+  font-size: 50px;
+  margin-bottom: 50px; /* Adiciona espaçamento abaixo do título */
+}
+
+.featurette-heading {
+  font-size: 50px;
+}
+
+@media (min-width: 70em) {
   .featurette-heading {
     margin-top: 7rem;
   }
 }
 
-/* Aplicar gradiente e bordas arredondadas à navbar */
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+/* Adicionando regras para redimensionar a imagem */
+.featurette .col-md-5 {
+  max-width: 400px; /* Limita a largura da imagem */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.featurette-image {
+  width: 100%; /* Garante que a imagem ocupe toda a largura disponível na coluna */
+  height: auto; /* Mantém a proporção da imagem */
+  object-fit: cover; /* Mantém a imagem dentro do container sem distorção */
+}
+
+
+
+
+/* NAVBAR Aplicar gradiente e bordas arredondadas à navbar */
 .navbar {
   background: linear-gradient(to right, rgb(17, 88, 77), rgb(20, 125, 108), rgb(30, 255, 255));
   border-radius: 0.15rem;

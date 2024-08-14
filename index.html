@@ -15,6 +15,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap" rel="stylesheet">
 
+    <!-- Bootstrap JavaScript (necessário para o funcionamento dos componentes como o dropdown) -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
         integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
@@ -55,30 +60,31 @@
                             <a class="nav-link" aria-current="page" href="index.html">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Quem somos</a>
+                            <a class="nav-link" href="#quem-somos">Quem somos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="incent.html">Incentivo I.F.A.</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="#">
+                                aria-expanded="false">
                                 Cursos
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Pessoa Física</a></li>
-                                <li><a class="dropdown-item" href="#">Empresas</a></li>
+                                <li><a class="dropdown-item" href="cursos.html">Pessoa Física</a></li>
+                                <li><a class="dropdown-item" href="cursos.html">Empresas</a></li>
                             </ul>
                         </li>
                     </ul>
                     <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <input class="form-control me-2" type="search" placeholder="Busca" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Pesquisa</button>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
+    
 
     <main>
        <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -87,6 +93,7 @@
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
         <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
@@ -115,7 +122,7 @@
                     <p> A sua doação será revertida em atividades para crianças com deficiência, com profissionais especializados, garantindo o 
                         desenvolvimento em diversas áreas.
                     </p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Saiba mais</a></p>
+                    <p><a class="btn btn-lg btn-primary" href="doacao.html" role="button">Saiba mais</a></p>
                 </div>
             </div>
         </div>
@@ -187,7 +194,7 @@
                         <img src="/static/images/teativismo-removebg-preview (3).png" class="rounded-circle" alt="Imagem 1">
                     </div>
                     <h2>Teativismo</h2>
-                    <p>Movimento para unir pessoas e famílias Ativistas na Causa dos Direitos da pessoa Autista. Propósito de acompanhar cobrar fiscalizar a criação de politicas públicas e execução do Poder Público. Proporcionar conhecimento e ajuda as famílias TEA (Transtorno Espectro Autista).</p>
+                    <p>Movimento para unir pessoas e famílias ativistas na causa dos direitos da pessoa autista. O TEAtivismo nasceu com o propósito de acompanhar, cobrar e fiscalizar a criação de políticas públicas e garantir a execução eficaz pelo poder público. Além disso, o projeto busca proporcionar conhecimento e apoio às famílias TEA (Transtorno do Espectro Autista), empoderando-as para que possam lutar por uma sociedade mais justa e inclusiva para todos.</p>
                     <p><a class="btn btn-secondary" href="#" role="button">Saiba mais &raquo;</a></p>
                 </div><!-- /.col-lg-4 -->
         
@@ -196,7 +203,7 @@
                         <img src="/static/images/empat.jpg" class="rounded-circle" alt="Imagem 2">
                     </div>
                     <h2>Empatea</h2>
-                    <p>Empatia, conscientização e inclusão do autista. </p>
+                    <p>Empatia, conscientização e inclusão do autista são pilares do projeto EMPATEA. Atuamos nas escolas, promovendo educação inclusiva e sensibilizando a comunidade para as necessidades dos alunos autistas. Nosso compromisso é levar informações essenciais às famílias atípicas, garantindo que todos compreendam e pratiquem a inclusão no ambiente escolar. Através da conscientização e do apoio, construímos uma sociedade onde cada criança tem seu espaço respeitado e valorizado.</p>
                     <p><a class="btn btn-secondary" href="#" role="button">Saiba mais &raquo;</a></p>
                 </div><!-- /.col-lg-4 -->
             </div><!-- /.row -->
@@ -205,79 +212,60 @@
         
             <!-- START THE FEATURETTES -->
 
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
+            <div class="row featurette" id="quem-somos">
                 <div class="col-md-7">
-                    <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your
-                            mind.</span>
-                    </h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                        euismod
-                        semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus
-                        ac cursus
-                        commodo.</p>
+                    <h2 class="featurette-heading">Quem Somos <span class="text-muted">?</span></h2>
+                    <p class="lead">O IFA (Instituto das Famílias Atípicas) foi fundado por Paula Muñoz, uma mãe de família atípica que, ao enfrentar os desafios diários com seu filho neurodivergente, decidiu ajudar outras famílias em situações semelhantes. Com essa missão, Paula idealizou e fundou os projetos TEAtivismo e EMPATEA.
+            
+                        O I.F.A. tem como objetivo acolher famílias atípicas, promovendo a inclusão em diversas áreas da sociedade. Oferecemos palestras, cursos e treinamentos para empresas e pessoas interessadas em aprender a lidar com as situações do dia a dia que envolvem pessoas com deficiência. Além disso, incentivamos o empreendedorismo dessas famílias, reconhecendo que muitos não conseguem trabalhar fora de casa devido à rotina exigente de seus filhos.
+                        
+                        A criação deste instituto é a prova de que, juntos, somos mais fortes e podemos transformar o nosso entorno.</p>
                 </div>
                 <div class="col-md-5">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                        height="500" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: 500x500"
-                        preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
-                            dy=".3em">500x500</text>
-                    </svg>
-
+                    <img src="/static/images/fund.png" class="featurette-image img-fluid mx-auto" width="500" height="500" alt="Descrição da Imagem">
                 </div>
             </div>
-
+            
+            
             <hr class="featurette-divider">
 
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for
-                            yourself.</span></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                        euismod
-                        semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus
-                        ac cursus
-                        commodo.</p>
-                </div>
-                <div class="col-md-5 order-md-1">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                        height="500" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: 500x500"
-                        preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
-                            dy=".3em">500x500</text>
-                    </svg>
+<div class="row featurette">
+    <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Missão <span class="text-muted"> I.F.A.</span></h2>
+        <p class="lead">Acolher, apoiar e empoderar famílias atípicas, promovendo a inclusão social e profissional através de educação, sensibilização e empreendedorismo. Buscamos transformar desafios em oportunidades, criando uma sociedade mais justa e acessível para todos, onde cada pessoa, independente de suas diferenças, possa prosperar e contribuir plenamente.</p>
+    </div>
+    <div class="col-md-5 order-md-1">
+        <video class="featurette-image img-fluid mx-auto" width="500" height="500" loop muted autoplay>
+            <source src="/static/video/miss.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+    </div>
+</div>
 
-                </div>
-            </div>
+            
+<hr class="featurette-divider">
+            
+<div class="row featurette">
+    <div class="col-md-7">
+        <h2 class="featurette-heading">Valores <span class="text-muted"> I.F.A.</span></h2>
+        <p>Inclusão: Promovemos um ambiente onde todas as pessoas, independentemente de suas diferenças, são acolhidas e respeitadas, garantindo igualdade de oportunidades.</p>
+        <p>Empatia: Valorizamos a compreensão e o apoio mútuo, colocando-nos no lugar do outro para melhor atender e ajudar as famílias atípicas.</p>
+        <p>Inovação: Buscamos soluções criativas e eficazes para os desafios enfrentados pelas famílias atípicas, incentivando o empreendedorismo e o desenvolvimento pessoal.</p>
+        <p>Resiliência: Acreditamos na força e na capacidade das famílias atípicas de superar adversidades, oferecendo suporte contínuo e motivação para enfrentar obstáculos.</p>
+        <p>Compromisso Social: Estamos dedicados à construção de uma sociedade mais justa e inclusiva, fiscalizando políticas públicas e promovendo a conscientização sobre a importância da inclusão.</p>
+        <p>Colaboração: Trabalhamos em parceria com comunidades, empresas e instituições para criar uma rede de apoio que fortaleça e amplie o impacto de nossas ações.</p>
+    </div>
+    <div class="col-md-5">
+        <video class="featurette-image img-fluid mx-auto" width="500" height="500" loop muted autoplay>
+            <source src="/static/video/val.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+    </div>
+</div>
+            
+<hr class="featurette-divider">
 
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                        euismod
-                        semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus
-                        ac cursus
-                        commodo.</p>
-                </div>
-                <div class="col-md-5">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                        height="500" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: 500x500"
-                        preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
-                            dy=".3em">500x500</text>
-                    </svg>
-
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
+            
 
             <!-- /END THE FEATURETTES -->
 
