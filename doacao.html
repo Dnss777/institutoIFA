@@ -5,41 +5,40 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.72.0">
-    <title>Carousel Template · Bootstrap</title>
+    <title>I.F.A (Instituto das Famílias Atípicas)</title>
 
-    <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/carousel/">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap" rel="stylesheet">
+    <!--Ícone da Aba-->
+    <link rel="icon" href="./static/images/favicon-32x32.png">
 
     <!-- Bootstrap JavaScript (necessário para o funcionamento dos componentes como o dropdown) -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
         integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-   
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
         integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
         crossorigin="anonymous"></script>
-   
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap" rel="stylesheet">
 
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css">
 
     <!-- Custom styles for this template -->
-    <link href="/static/css/style.css" rel="stylesheet">
+    <link href="/static/css/doacao.css" rel="stylesheet">
 </head>
 
 <body>
@@ -60,8 +59,9 @@
                             <a class="nav-link" aria-current="page" href="index.html">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Quem somos</a>
+                            <a class="nav-link" href="#quem-somos">Quem somos</a>
                         </li>
+                        
                         <li class="nav-item">
                             <a class="nav-link" href="incent.html">Incentivo I.F.A.</a>
                         </li>
@@ -71,14 +71,18 @@
                                 Cursos
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Pessoa Física</a></li>
-                                <li><a class="dropdown-item" href="#">Empresas</a></li>
+                                <li><a class="dropdown-item" href="cursos.html">Pessoa Física</a></li>
+                                <li><a class="dropdown-item" href="cursos.html">Empresas</a></li>
                             </ul>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="doacao.html">Doações</a>
+                        </li>
+                    </ul>
                     </ul>
                     <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Busca" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Pesquisa</button>
+                        <input class="form-control me-2" type="search" placeholder="Em construção ..." aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
                     </form>
                 </div>
             </div>
@@ -187,7 +191,7 @@
                     <p class="lead">Sua contribuição é essencial para transformar diferenças em oportunidades e amor em ações concretas. Com o IFA, cada doação apoia atividades inclusivas como esportes adaptados e teatro, promovendo o desenvolvimento de crianças atípicas. Além disso, seu apoio fortalece grupos de ajuda e assistência psicológica para pais, proporcionando o suporte necessário em momentos desafiadores. Ao investir em nossa causa, você está ajudando a construir um futuro mais justo e acessível para todas as famílias. Juntos, podemos promover a inclusão e o empreendedorismo. Forças nas diferenças, amor sem limitações — junte-se a nós e faça parte dessa transformação! Sua doação é a chave para um impacto real.</p>
                 </div>
                 <div class="col-md-5">
-                    <img src="/static/images/qr.png" class="featurette-image img-fluid mx-auto" width="500" height="500" alt="Descrição da Imagem">
+                    <img src="/static/images/new_QR.jpg" class="featurette-image img-fluid mx-auto" width="500" height="500" alt="Descrição da Imagem">
                 </div>
             </div>
             
@@ -196,33 +200,44 @@
 
 <div class="row featurette">
     <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">Missão <span class="text-muted"> I.F.A.</span></h2>
-        <p class="lead">Acolher, apoiar e empoderar famílias atípicas, promovendo a inclusão social e profissional através de educação, sensibilização e empreendedorismo. Buscamos transformar desafios em oportunidades, criando uma sociedade mais justa e acessível para todos, onde cada pessoa, independente de suas diferenças, possa prosperar e contribuir plenamente.</p>
+        <h2 class="featurette-heading">Contribua com grupo de apoio a país atípicos<span class="text-muted"> I.F.A.</span></h2>
+        <p class="lead">Sua doação faz a diferença na vida de famílias atípicas. Com o seu apoio, podemos fortalecer nosso grupo de apoio, oferecendo programas como rodas de conversa com profissionais especializados e redes de apoio que proporcionam momentos de descontração para os pais. Inspirados em iniciativas bem-sucedidas ao redor do mundo, como o modelo de <a href="https://central-okanagan.pathwaysbc.ca/programs/783" target="_blank">Parent Support Circles</a>, nossa missão é criar um ambiente acolhedor onde pais compartilham experiências e encontram suporte emocional. Participe dessa transformação!</p>
     </div>
     <div class="col-md-5 order-md-1">
         <video class="featurette-image img-fluid mx-auto" width="500" height="500" loop muted autoplay>
-            <source src="/static/video/miss.mp4" type="video/mp4">
+            <source src="/static/video/acolh.mp4" type="video/mp4">
             Seu navegador não suporta o elemento de vídeo.
         </video>
     </div>
 </div>
+
 
             
 <hr class="featurette-divider">
             
 <div class="row featurette">
     <div class="col-md-7">
-        <h2 class="featurette-heading">Valores <span class="text-muted"> I.F.A.</span></h2>
-        <p>Inclusão: Promovemos um ambiente onde todas as pessoas, independentemente de suas diferenças, são acolhidas e respeitadas, garantindo igualdade de oportunidades.</p>
-        <p>Empatia: Valorizamos a compreensão e o apoio mútuo, colocando-nos no lugar do outro para melhor atender e ajudar as famílias atípicas.</p>
-        <p>Inovação: Buscamos soluções criativas e eficazes para os desafios enfrentados pelas famílias atípicas, incentivando o empreendedorismo e o desenvolvimento pessoal.</p>
-        <p>Resiliência: Acreditamos na força e na capacidade das famílias atípicas de superar adversidades, oferecendo suporte contínuo e motivação para enfrentar obstáculos.</p>
-        <p>Compromisso Social: Estamos dedicados à construção de uma sociedade mais justa e inclusiva, fiscalizando políticas públicas e promovendo a conscientização sobre a importância da inclusão.</p>
-        <p>Colaboração: Trabalhamos em parceria com comunidades, empresas e instituições para criar uma rede de apoio que fortaleça e amplie o impacto de nossas ações.</p>
+        <h2 class="featurette-heading">Atividades Inclusivas para  <span class="text-muted"> Crianças com Deficiência</span></h2>
+        <p>No IFA, nos inspiramos nas melhores práticas de institutos ao redor do mundo para oferecer atividades enriquecedoras e inclusivas para crianças com deficiência. Entre elas, destacamos esportes adaptados que promovem o bem-estar físico, a plantação em jardins sensoriais que estimulam o contato com a natureza, e oficinas de música que desenvolvem a expressão artística e emocional. Todas as atividades são acompanhadas por profissionais especializados, garantindo segurança, estímulo adequado e suporte integral. Nossas atividades incentivam a autonomia, a socialização e o desenvolvimento pleno, em um ambiente acolhedor e estimulante.</p>
     </div>
     <div class="col-md-5">
         <video class="featurette-image img-fluid mx-auto" width="500" height="500" loop muted autoplay>
-            <source src="/static/video/val.mp4" type="video/mp4">
+            <source src="/static/video/crian.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+    </div>
+</div>
+
+<hr class="featurette-divider">
+
+<div class="row featurette">
+    <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Empreendorismo para <span class="text-muted"> famílias atípicas</span></h2>
+        <p class="lead">No IFA, suas doações não apenas apoiam atividades para crianças com deficiência, mas também são revertidas para incentivar o empreendedorismo entre pais atípicos. Muitos desses pais enfrentam dificuldades para manter empregos tradicionais devido às inúmeras responsabilidades com terapias e cuidados especiais para seus filhos, dependendo apenas de benefícios governamentais. Por meio de cursos, oficinas e acesso a recursos, ajudamos essas famílias a desenvolverem negócios próprios, oferecendo uma alternativa de renda sustentável e flexível que se adapta à rotina de cuidados intensivos. Com sua contribuição, podemos transformar vidas e promover a autonomia financeira dessas famílias.</p>
+    </div>
+    <div class="col-md-5 order-md-1">
+        <video class="featurette-image img-fluid mx-auto" width="500" height="500" loop muted autoplay>
+            <source src="/static/video/job.mp4" type="video/mp4">
             Seu navegador não suporta o elemento de vídeo.
         </video>
     </div>
@@ -230,46 +245,47 @@
             
 <hr class="featurette-divider">
 
-            
-
-            <!-- /END THE FEATURETTES -->
+                     <!-- /END THE FEATURETTES -->
 
         </div><!-- /.container -->
 
 
-        <!-- FOOTER -->
-        <footer>
+           <!-- FOOTER -->
+           <footer>
             <div class="footer-info">
-              <div class="contact-info">
+                <div class="contact-info">
+                    <h5>Telefone para contato</h5>
+                    <p>+55 11 96917-6170</p>
+                </div>
+                <div class="end-info">
+                    <h5>Endereço</h5>
+                    <p>São Bernardo do Campo e Santo André - SP</p>
+                </div>
+                <div class="social-media text-white">
+                    <h5>Nossas mídias sociais</h5>
+                    <i class="bi bi-instagram insta fs-4" onclick="window.open('https://www.instagram.com/institutodasfamiliasatipicas/', '_blank')"></i>
+                    <div class="icon" style="position: relative;">
+                    <i class="bi bi-facebook face fs-4" onclick="window.open('https://www.facebook.com/profile.php?id=61564276799666', '_blank')"></i>
+                    </div>
+                    <i class="bi bi-messenger mess fs-4" onclick="window.open('https://www.facebook.com/messages/t/389154737615555', '_blank')"></i>
+                    <i class="bi bi-whatsapp whats fs-4" onclick="window.open('https://wa.me/5511969176170', '_blank')"></i>
+                </div>
+            </div>
         
-                <h5>Telefone para contato</h5>
-              </p>
-                <p> +55 11 96917-6170</p>
-              </div>
-              <div class="end-info">
-                <h5>Endereço</h5>
-                
-                <p> São Bernardo do Campo e Santo André - SP</p>
-              </div>
-              <div class="social-media text-white">
-                <h5>Nossas mídias sociais</h5>
-                <i class="bi bi-instagram insta fs-4" onclick="window.open('https://www.instagram.com/teativismo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==/', '_blank')"></i>
-                <i class="bi bi-facebook face fs-4" onclick="window.open('https://l.instagram.com/?u=https%3A%2F%2Fm.facebook.com%2Fgroups%2F285857367120656%2F%3Fref%3Dshare%26mibextid%3DNSMWBT&e=AT0jIMA2eHc1WD7rBF_J3SNWZTeJQRt7Ta9L7P1brCSKC1-qd-v5RPmwt_dCDzMuPV8BuS1oVjWJ1Ri-Fvdt6wQLtyP41_Eg2f_3Z50lzrrgukWXf7u9sQ','_blank')"></i>
-                <i class="bi bi-messenger mess fs-4" onclick="window.open('https://www.messenger.com/','_blank')"></i>
-                <i class="bi bi-whatsapp whats fs-4" onclick="window.open('https://wa.me/5511969176170','_blank')"></i>
-            </div>
-            </div>
             <div class="footer-text">
-              <p>&copy; 2024 I.F.A. Todos os direitos reservados.</p>
-              
+                <p>&copy; 2024 I.F.A. Todos os direitos reservados.</p>
             </div>
-          </footer>
-    </main>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9g5wLsWTLKPQWJ0MxtEKhHLYHh+54nR8X4fD4E1D5e7P4S7gx2Q" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-
-
-</body>
-
-</html>
+        </footer>
+        
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz4fnFO9g5wLsWTLKPQWJ0MxtEKhHLYHh+54nR8X4fD4E1D5e7P4S7gx2Q"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    
+    
+    </body>
+    
+    </html>

@@ -1,0 +1,156 @@
+/* Garante que o body e o html preencham a altura total da janela */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Remove a barra de rolagem horizontal */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Faz o main ocupar o espaço disponível */
+main {
+    flex: 1;
+    padding-top: 100px; /* Adiciona espaço no topo para compensar a navbar fixa */
+}
+
+/* Footer que fica na parte inferior após o conteúdo */
+footer {
+    background-image: linear-gradient(to right, rgb(24, 75, 67), rgb(20, 125, 108));
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .footer-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 30px; /* Adiciona mais espaço ao redor das informações */
+  }
+  
+  .contact-info, .end-info {
+    color: white;
+    font-size: medium;
+  }
+  
+  .footer-text {
+    text-align: center;
+    color: white;
+    padding: 1px; /* Adiciona espaçamento interno para o rodapé */
+  }
+  
+  /* Estilo das mídias sociais */
+  .social-media {
+    text-align: center;
+  }
+  
+  .insta, .face, .mess, .whats {
+    color: #020202b7;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 15px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    main {
+      padding-bottom: 90px;
+    }
+  
+    footer .footer-info {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 100px;
+    }
+  
+    .social-media {
+      text-align: center;
+    }
+  
+    .card-group {
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+    }
+  }
+  
+  .footer-text {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+  }
+
+  .icon i {
+    color: #020202b7;
+    transition: color0,3 ease-in-out;
+  }
+  
+  /*.icon:hover i {
+    color: #1216da;
+  }*/
+  
+  
+  .icon  {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .icon:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .tooltip {
+    visibility: hidden;
+    opacity: 0;
+    width: 120px;
+    background-color: #3b5998;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%; /* Coloca a tooltip acima do ícone */
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.10s;
+  }
+  
+  .tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* A seta estará no topo da tooltip */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #3b5998 transparent transparent transparent;
+  }
+  
+  
+  
+  
+
+/* NAVBAR Aplicar gradiente e bordas arredondadas à navbar */
+.navbar {
+    background: linear-gradient(to right, rgb(17, 88, 77), rgba(35, 201, 173, 0.603), rgba(30, 255, 255, 0.774));
+    border-radius: 0.15rem;
+    padding: 0.1rem 1rem;
+    margin: 0;
+}
+
+/* Customizar o texto da navbar-brand */
+.navbar-brand {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FF5362;
+}
+
+/* Se houver uma classe específica para a fonte */
+.grey-qo-regular {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* vídeo*/
